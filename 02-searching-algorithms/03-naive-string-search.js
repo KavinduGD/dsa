@@ -9,15 +9,9 @@ function naiveStringSearch(longString, shortString) {
   let isMatch;
 
   for (let i = 0; i < longStringLength; i++) {
-    isMatch = true;
     for (let j = 0; j < shortStringLength; j++) {
-      if (shortString[j] !== longString[i + j]) {
-        isMatch = false;
-        break;
-      }
-    }
-    if (isMatch) {
-      index.push(i);
+      if (shortString[j] !== longString[i + j]) break;
+      if (j === shortStringLength - 1) index.push(i);
     }
   }
 
