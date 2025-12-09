@@ -4,7 +4,7 @@
 - **space (memory used)**
 - **readability**
 
-## Time complexity
+## Time
 
 ### why not timers
 
@@ -13,7 +13,7 @@
 
 ---
 
-## Space complexity
+## Space
 
 ### why not memory usage
 
